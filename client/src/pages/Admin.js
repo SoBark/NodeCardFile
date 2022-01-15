@@ -9,8 +9,8 @@ const Admin = () => {
     const [typeVisible, setTypeVisible] = useState (false)
     return(
         <Container className='d-flex flex-column'>
-            <Button onClick={()=>setCaseVisible(true)} variant={"outline-dark" } className="mt-2">Добавить статью</Button>
-            <Button onClick={()=>setTypeVisible(true)} variant={"outline-dark" } className="mt-2">Добавить дело</Button>
+            <Button onClick={()=>setCaseVisible(true)} variant={"outline-dark" } className="mt-2">Добавить дело</Button>
+            <Button onClick={()=>setTypeVisible(true)} variant={"outline-dark" } className="mt-2">Добавить статью</Button>
         <CreateCase show={caseVisible} onHide={() => setCaseVisible(false)}/>
         <CreateType show={typeVisible} onHide={() => setTypeVisible(false)}/>
         </Container>

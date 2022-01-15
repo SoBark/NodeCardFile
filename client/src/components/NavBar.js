@@ -18,7 +18,7 @@ const NavBar = observer(() => {
             {user.isAuth ?
                 <Nav className="mt-auto" style={{color: 'white'}}>
                     <Button onClick={()=> history.push(ADMIN_ROUTE)}>
-                        Админ панель
+                        Добавить
                     </Button>
                     <Button onClick={()=> history.push(LOGIN_ROUTE)} className="mt-2">
                         Выйти
